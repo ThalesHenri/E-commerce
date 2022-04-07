@@ -1,7 +1,7 @@
-import product
+from product import Product
 
 
-class Clothing(product):
+class Clothing(Product):
     def __init__(self, name, weight, quantity, size):
         super().__init__(name, weight, quantity)
         self.size = size
