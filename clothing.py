@@ -5,6 +5,6 @@ and the other will be a str like XG, G, M P """
 
 
 class Clothing(Product):
-    def __init__(self, name, weight, quantity, price, size):
-        super().__init__(name, weight, quantity, price)
+    def __init__(self, name, weight, price, size):
+        super().__init__(name, weight, price)
         self.size = size

@@ -7,6 +7,3 @@ User Stories:
 6- Como Gerente, eu quero ver as estatiscas de compras dos clientes, para otimizar o estoque
 7- Como Cliente, eu quero ver o historico de compras, para informar o cliente sobre suas compras efetuadas.
 8- Como Cliente, eu quero selecionar os produtos cadastrados no estoque, para  poder comprar produtos.
-9- Como Sistema, eu quero adicionar os produtos selecionados pelo gerente ao estoque, para poder atualizar os dados do estoque.
-10- Como Sistema, eu quero remover os produtos selecionados pelo gerente do estoque, para poder atualizar os dados do estoque
-11- Como Sistema, eu quero remover os produtos selecionados pelo cliente do estoque mediante validação(pagamento>preço), para assim realizar a compra
