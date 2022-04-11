@@ -28,11 +28,12 @@ def register_product():
     a = int(input("1 - Shoes:\n2 - clothing\n3 - Other\n"))
     if a == 1:
         n = str(input("Name: "))
+        # b = store.add_condition(n)
         w = str(input("Weight: "))
         q = int(input("Quantity: "))
         s = int(input("Size: "))
         p = int(input("Price: "))
-        shoes = Shoes(n, w, p, s)
+        shoes = Shoes(n, w, p, s)  # shoes object
         store.add_shoes(shoes, q)
         store.test_list()
 
@@ -52,11 +53,10 @@ while run:
     if a == 2:
         delete_product()
     if a == 3:
-        show_stock()
+        store.test_list()
     if a == 4:
         edit_stock()
     if a == 5:
         client_metrics()
     if a == 6:
         break
-        
