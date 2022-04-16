@@ -1,28 +1,39 @@
 
-
 # will do the functions of storage
 class Store:
     def __init__(self):
         self.stock = []
 
-    def add_shoes(self, product, quantity):  # condition):
-        """if condition is True:
+    def add_shoes(self, product, quantity, condition):  # condition  Need to fix that
+        if condition:
             self.stock.append((product, quantity))
-        if condition is False:
-            for a, b in self.stock:
+            print("the condition is {}".format(condition))
+        else:
+            for (a, b) in self.stock:
                 b = (b + quantity)
+                print("the condition is {}".format(condition))
+        return self.stock
 
-    def add_condition(self, product):
+    def add_clothing(self, product, quantity, condition):
+        if condition:
+            self.stock.append((product, quantity))
+        else:
+            for (a, b) in self.stock:
+                b += quantity
+        return self.stock
+
+    def add_condition(self, product):  # Working
         condition = False
-        if len(self.stock) == 0:
+        if len(self.stock) > 0:
             for a, b in self.stock:
-                if not a.name == product.name:
-                    condition = True
-                else:
+                if a.name == product:
                     condition = False
-        return condition"""
-        self.stock.append((product, quantity))
+                else:
+                    condition = True
+        if len(self.stock) == 0:
+            condition = True
+        return condition
 
     def test_list(self):
-        for (c, b) in self.stock:
+        for c, b in self.stock:
             print(c.name, c.price, "we have {} of that product".format(b))

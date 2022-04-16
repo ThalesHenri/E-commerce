@@ -1,5 +1,6 @@
 from store import Store
 from shoes import Shoes
+from clothing import Clothing
 
 """object"""
 store = Store()
@@ -28,14 +29,28 @@ def register_product():
     a = int(input("1 - Shoes:\n2 - clothing\n3 - Other\n"))
     if a == 1:
         n = str(input("Name: "))
-        # b = store.add_condition(n)
         w = str(input("Weight: "))
         q = int(input("Quantity: "))
         s = int(input("Size: "))
         p = int(input("Price: "))
+        b = store.add_condition(n)
         shoes = Shoes(n, w, p, s)  # shoes object
-        store.add_shoes(shoes, q)
+        store.add_shoes(shoes, q, b)
         store.test_list()
+
+    if a == 2:  # same product name added, increase his quantity
+        n = str(input("Name: "))
+        w = str(input("Weight: "))
+        q = int(input("Quantity: "))
+        s = int(input("Size: "))
+        p = int(input("Price: "))
+        b = store.add_condition(n)
+        cloth = Clothing(n, w, p, s)  # cloth object
+        store.add_clothing(cloth, q, b)
+        store.test_list()
+
+    if a == 3:
+        pass
 
 
 while run:
