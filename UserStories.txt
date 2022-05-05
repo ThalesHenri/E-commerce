@@ -1,0 +1,9 @@
+User Stories:
+1- Como Gerente, eu quero cadastrar produtos do sistema, para que o produto fique cadastrado no sistema
+2- Como Gerente, eu quero remover produtos do sistema, para poder remover produtos do sistema
+3- Como Gerente, eu quero Editar os produtos, para poder corrigir erros no momento do cadastro.
+4- Como Gerente, eu quero selecionar os produtos cadastrados no sistema, para o sistema adicionar os produtos no estoque estoque.
+5- Como Gerente, eu quero selecionar produtos cadastrados do estoque, para o sistema poder remover produtos do estoque.
+6- Como Gerente, eu quero ver as estatiscas de compras dos clientes, para otimizar o estoque
+7- Como Cliente, eu quero ver o historico de compras, para informar o cliente sobre suas compras efetuadas.
+8- Como Cliente, eu quero selecionar os produtos cadastrados no estoque, para  poder comprar produtos.
